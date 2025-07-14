@@ -22,6 +22,20 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/, // Match image file types
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              name: '[path][name].[ext]', // Output file name structure (if image is too large)
+              limit: 10000, // Convert images smaller than this size (in bytes) to Data URIs
+              fallback: 'file-loader', // Use file-loader if the image is larger than the limit
+              context: path.resolve(__dirname, 'src'),
+            }
+          }
+        ]
       }
     ]
   }
