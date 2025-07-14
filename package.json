@@ -1,0 +1,23 @@
+{
+  "name": "developercraig.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/DeveloperCraig/DeveloperCraig.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/DeveloperCraig/DeveloperCraig.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperCraig/DeveloperCraig.github.io.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}
