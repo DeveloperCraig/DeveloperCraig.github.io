@@ -46,6 +46,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
     }),
+    new HtmlWebpackPlugin({
+    template: './cSharpe.html',
+    filename: 'cSharpe.html',
+  }),
   ],
   devServer: {
     static: {
